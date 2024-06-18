@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+  display: block;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.navbar {
+  width: min(800px, 100%);
+  margin-inline: auto;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  color: dodgerblue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-text {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.323943661971831rem + 0.7511737089201878vw, 2rem);
+}
+button {
+  display: block;
+  margin-inline: auto;
+  padding: 0.75rem 2rem;
+  border-width: 0;
+  border-radius: 36px;
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 1.25rem;
+  font-size: clamp(
+    1.25rem,
+    1.073943661971831rem + 0.7511737089201878vw,
+    1.75rem
+  );
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+.char-img {
+  margin-top: 2rem;
+}
+
+@media (width <= 900px) {
+  .navbar {
+    padding-inline: 2rem;
+  }
+}
